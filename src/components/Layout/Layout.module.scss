@@ -1,0 +1,8 @@
+.Layout {
+  width: 100%;
+  background-color: rebeccapurple;
+
+  @include breakpoint(0 320px) {
+    background-color: green;
+  }
+}

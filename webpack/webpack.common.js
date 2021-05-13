@@ -18,8 +18,22 @@ module.exports = {
         ],
       },
       {
-        test: /\.css$/,
-        use: ['style-loader', 'css-loader'],
+        test: /\.scss$/,
+        use: [
+          'style-loader',
+          'css-loader',
+          'sass-loader',
+          {
+            loader: 'sass-resources-loader',
+            options: {
+              resources: path.resolve(
+                __dirname,
+                '..',
+                './src/scss/styles.scss'
+              ),
+            },
+          },
+        ],
       },
       {
         test: /\.(?:ico|gif|png|jpg|jpeg)$/i,

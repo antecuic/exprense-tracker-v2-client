@@ -1,3 +1,11 @@
-const App = () => <h1>Hellou</h1>
+import Layout from './components/Layout/Layout'
+
+const App = () => {
+  return (
+    <Layout>
+      <div>Hellou</div>
+    </Layout>
+  )
+}
 
 export default App
