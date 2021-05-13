@@ -1,2 +1,12 @@
 // External libs
 @import '../../node_modules/breakpoint-sass/stylesheets/breakpoint';
+
+// Settings
+@import './1-settings/s-variables';
+
+// Mixins
+@import './2-mixins/m-ellipsis';
+@import './2-mixins/m-placeholder';
+
+// Generic
+@import './3-generic/g-reset';
