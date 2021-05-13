@@ -1,0 +1,61 @@
+// Page sizes
+$min-width: 320px;
+$max-width: 1000px;
+$menu-width: 1390px;
+$max-mob-width: 375px;
+
+$font-size: 12px;
+
+// Breakpoints
+$br-default-max: 414px;
+$br-small-min: 415px;
+$br-small-max: 767px;
+$br-medium-min: 768px;
+$br-medium-max: 1024px;
+$br-large-min: 1025px;
+$frontpage-br: 999px;
+$br-larger-max: 1300px;
+$ad-tabl-br: 1400px;
+$vw-full: 100;
+$vw-full-max: strip-unit($max-width);
+
+$col-widths: (
+  full: (
+    $vw-full,
+  ),
+  threequarters: (
+    ($vw-full / 4) * 3,
+  ),
+  threefifths: (
+    ($vw-full / 5) * 3,
+  ),
+  twothirds: (
+    $vw-full / 3 * 2,
+  ),
+  half: (
+    $vw-full / 2,
+  ),
+  onethird: (
+    $vw-full / 3,
+  ),
+  twofifths: (
+    ($vw-full / 5) * 2,
+  ),
+  fifth: (
+    $vw-full / 5,
+  ),
+  quarter: (
+    $vw-full / 4,
+  ),
+);
+
+$min-breakpoints: (
+  small: $br-small-min,
+  medium: $br-medium-min,
+  large: $br-large-min,
+);
+
+$max-breakpoints: (
+  small: $br-small-max,
+  medium: $br-medium-max,
+);
