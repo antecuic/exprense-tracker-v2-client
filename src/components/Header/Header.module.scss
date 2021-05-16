@@ -1,0 +1,52 @@
+.header {
+  width: 100%;
+  background-color: $color-primary;
+  font-size: $header-font-size;
+  -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+  -moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+  box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+
+  .headerList {
+    position: relative;
+    width: 100%;
+    max-width: $max-width;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+
+    .logo {
+      position: absolute;
+      @include inline-svg($logo);
+
+      width: 50px;
+      height: 50px;
+      left: 1rem;
+      margin-top: 0.5rem;
+
+      @include breakpoint(0 $br-default-max) {
+        width: 40px;
+        height: 40px;
+        margin-top: 0.3rem;
+      }
+    }
+
+    .headerItem {
+      padding: 1.5rem 2rem;
+      transition: all 0.2s ease-in;
+      color: white;
+
+      @include breakpoint(0 $br-default-max) {
+        padding: 1rem 1.5rem;
+      }
+
+      &.selected {
+        color: $color-secondary;
+      }
+
+      &:hover {
+        color: $color-secondary;
+        cursor: pointer;
+      }
+    }
+  }
+}

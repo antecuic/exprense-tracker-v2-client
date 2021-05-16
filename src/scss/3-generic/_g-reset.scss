@@ -104,6 +104,7 @@ section {
 
 body {
   line-height: 1;
+  font-family: $font-family;
 }
 
 ol,
@@ -128,4 +129,9 @@ q {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }

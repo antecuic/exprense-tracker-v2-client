@@ -1,0 +1,17 @@
+$logo: "data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 60'%3E%3Cpath fill='%23e57e25' d='M20 12h10v45H20z'/%3E%3Cpath fill='%2326b99a' d='M33 43h10v14H33zM46 34h10v23H46zM7 20h10v37H7z'/%3E%3Cpath d='M3 60a1 1 0 01-1-1V1a1 1 0 112 0v58a1 1 0 01-1 1z' fill='%23556080'/%3E%3Cpath d='M59 58H1a1 1 0 110-2h58a1 1 0 110 2z' fill='%23556080'/%3E%3C/svg%3E"
+  60px 60px;
+
+@mixin inline-svg($name) {
+  background: transparent url(nth($name, 1)) no-repeat 50% 50%;
+  background-size: 100%;
+  width: nth($name, 2);
+  height: nth($name, 3);
+}
+
+@function inline-svg-width($name) {
+  @return nth($name, 2);
+}
+
+@function inline-svg-height($name) {
+  @return nth($name, 3);
+}
