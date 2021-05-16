@@ -1,10 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+// Colors
+$color-primary: #0081a7;
+$color-secondary: #fed9b7;
+
 // Page sizes
 $min-width: 320px;
 $max-width: 1000px;
 $menu-width: 1390px;
 $max-mob-width: 375px;
 
-$font-size: 12px;
+// Font sizes
+$font-size: 16px;
+$header-font-size: 18px;
+
+// Font family
+$font-family: 'Roboto', sans-serif;
 
 // Breakpoints
 $br-default-max: 414px;

@@ -1,0 +1,16 @@
+{
+  "navigation": [
+    {
+      "text": "Home",
+      "urlname": "home",
+      "url": "/",
+      "description": "Home"
+    },
+    {
+      "text": "Options",
+      "urlname": "options",
+      "url": "/options",
+      "description": "Options"
+    }
+  ]
+}
